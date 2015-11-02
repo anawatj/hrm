@@ -1,5 +1,7 @@
 package com.tao.hrm.domain.employee;
 
+import java.util.Set;
+
 import com.tao.hrm.domain.AbstractDomain;
 import com.tao.hrm.domain.master.Branch;
 import com.tao.hrm.domain.master.Company;
@@ -22,9 +24,23 @@ public abstract class Employee extends AbstractDomain<Long> {
 	private Department department;
 	private Position position;
 	private Double salary;
+	private Set<Experience> experiences;
+	private Set<Education> educations;
 
 	
 	
+	public Set<Experience> getExperiences() {
+		return experiences;
+	}
+	public void setExperiences(Set<Experience> experiences) {
+		this.experiences = experiences;
+	}
+	public Set<Education> getEducations() {
+		return educations;
+	}
+	public void setEducations(Set<Education> educations) {
+		this.educations = educations;
+	}
 	public Double getSalary() {
 		return salary;
 	}
