@@ -22,6 +22,8 @@ public abstract class Employee extends AbstractDomain<Long> {
 	private Department department;
 	private Position position;
 	private Double salary;
+
+	
 	
 	public Double getSalary() {
 		return salary;
