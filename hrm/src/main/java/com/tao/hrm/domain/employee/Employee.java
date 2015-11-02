@@ -24,6 +24,27 @@ public abstract class Employee extends AbstractDomain<Long> {
 	private Department department;
 	private Position position;
 	private Double salary;
+	private Integer sickLeave;
+	private Integer businessLeave;
+	private Integer vocationLeave;
+	public Integer getSickLeave() {
+		return sickLeave;
+	}
+	public void setSickLeave(Integer sickLeave) {
+		this.sickLeave = sickLeave;
+	}
+	public Integer getBusinessLeave() {
+		return businessLeave;
+	}
+	public void setBusinessLeave(Integer businessLeave) {
+		this.businessLeave = businessLeave;
+	}
+	public Integer getVocationLeave() {
+		return vocationLeave;
+	}
+	public void setVocationLeave(Integer vocationLeave) {
+		this.vocationLeave = vocationLeave;
+	}
 	private Set<Experience> experiences;
 	private Set<Education> educations;
 
